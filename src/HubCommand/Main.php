@@ -24,11 +24,10 @@ class Main extends PluginBase {
             case "hub":
             case "lobby":
                 if ($sender instanceof Player) {
-                    $sender->getPlayer()->teleport($spawn);
+                    $sender->getPlayer()->teleport($spawnLocation);
                 } else {
                     $sender->sendMessage(TextFormat::RED . "Please use this command in-game");
                 }
-                return true;
                 break;
         }
         return false;
