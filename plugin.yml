@@ -1,0 +1,26 @@
+name: HubCommand
+main: HubCommand\Main
+version: 1.0.0
+api: 3.0.0, 4.0.0
+author: IceCruelStuff
+load: STARTUP
+
+commands:
+    hub:
+        description: "Teleports you to hub"
+        usage: "/hub"
+        permission: hub.command
+
+    lobby:
+        description: "Teleports you to lobby"
+        usage: "/lobby"
+        permission: lobby.command
+
+permission:
+    hub.command:
+        default: true
+        description: "Hub command"
+
+    lobby.command:
+        default: true
+        description: "Lobby command"
